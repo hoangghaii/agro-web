@@ -1,0 +1,312 @@
+/* ---------------- style page ----------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Thasadith&display=swap');
+
+@font-face {
+    font-family: 'helvetica_neue';
+    src: url('../fonts/helveticaneue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --yellow-main-color: #E8CD30;
+    --white-color: #fff;
+    --font-color: #4C4C4C;
+    --p-color: #707579;
+    --gray-color: #CCCCCC;
+    --gray-color2: #DDDDDD;
+    --blue-color: #17A2B8;
+    --green-color: #009F4D;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+html,
+body {
+    font-family: 'helvetica_neue';
+    font-size: 100%;
+}
+
+
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+header #logo a {
+    float: left;
+    margin: 0;
+    font-size: .75em;
+    font-weight: 600;
+    padding: 3px 0;
+    letter-spacing: 1px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+header nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+header nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+header nav i.fa {
+    color: var(--yellow-main-color);
+}
+
+header nav .menu li a:hover {
+    color: var(--yellow-main-color);
+}
+
+/* --- Banner --- */
+
+.banner .banner-img1 {
+    background: url(../images/3.jpg) no-repeat center;
+}
+
+.banner .banner-img2 {
+    background: url(../images/1.jpg) no-repeat center;
+}
+
+.banner .banner-img3 {
+    background: url(../images/5.jpg) no-repeat center;
+}
+
+.banner .banner-img4 {
+    background: url(../images/2.jpg) no-repeat center;
+}
+
+.banner .thumb {
+    min-height: 663px;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .banner-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    margin: 0 auto;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.banner .banner-content h3 {
+    font-family: 'Thasadith', sans-serif;
+    font-size: 4em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
+    padding: .1em 0;
+}
+
+.banner .banner-content h4 {
+    font-size: 1.6em;
+    text-transform: capitalize;
+    letter-spacing: .2em;
+    padding: 1em 0;
+}
+
+.banner .banner-content p {
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 2em;
+    font-weight: 400;
+    font-size: 1.1em;
+    padding: .1em 0;
+}
+
+.banner .banner-content a {
+    padding: .5em 1.9em;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-weight: 500;
+}
+
+.banner .banner-content a:hover {
+    border: 1px solid var(--yellow-main-color);
+}
+
+.banner .swiper-button-next,
+.banner .swiper-button-prev {
+    color: var(--yellow-main-color);
+}
+
+/* --- #End banner --- */
+
+
+/* --- About --- */
+
+.about {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.about p {
+    color: var(--p-color);
+}
+
+.about .about-text {
+    width: 70%;
+    margin: 1em auto 2em;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.about .grid-content {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about .fab {
+    font-size: 1.5em;
+    line-height: 2.9em;
+}
+
+/* --- #End about --- */
+
+
+/* --- Why choose us --- */
+
+.wcu {
+    text-align: center;
+    padding: 3em 0;
+    background-color: var(--green-color);
+}
+
+.wcu h3 {
+    color: var(--white-color);
+}
+
+.wcu p {
+    color: var(--gray-color);
+}
+
+.wcu .grid-content {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.wcu .grid-icon i {
+    color: var(--yellow-main-color);
+    font-size: 3em;
+    line-height: 1.4em;
+}
+
+/* --- #End why choose us --- */
+
+
+/* --- Core --- */
+
+.core {
+    padding: 3em 0;
+}
+
+.core h3 {
+    text-align: center;
+}
+
+.core .core-img {
+    background: url(../images/core.jpg) no-repeat center;
+    background-size: 100%;
+    width: 540px;
+    height: 360px;
+}
+
+.core .grid-content {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.core .core-right {
+    margin: auto 0;
+}
+
+.core .grid-item h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    padding: 0 .9em;
+}
+
+/* --- #End core ---*/
+
+
+/* --- Ability --- */
+.ability {
+    background: url(../images/5.jpg) no-repeat center;
+    background-size: 100%;
+    color: var(--white-color);
+}
+
+.ability .overlay-clr {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3em 0;
+}
+
+.ability h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    padding: 0 .9em;
+}
+
+.ability p {
+    color: var(--gray-color);
+    font-weight: 500;
+    line-height: 1.9em;
+}
+
+.ability li {
+    color: var(--gray-color2);
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+.ability .grid-content {
+    grid-template-columns: 2fr 2.4fr 1fr;
+}
+
+/* --- #End ability --- */
+
+
+/* --- Product and services--- */
+
+.product {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.product .section-title {
+    text-transform: none;
+}
+
+/* --- #End product and services--- */
