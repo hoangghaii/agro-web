@@ -18,6 +18,7 @@
     --gray-color2: #DDDDDD;
     --blue-color: #17A2B8;
     --green-color: #009F4D;
+    --black-color: #191818;
 }
 
 ul {
@@ -39,6 +40,65 @@ body {
     font-size: 100%;
 }
 
+/* --- Grid --- */
+
+.grid-content {
+    display: grid;
+}
+
+.grid-icon {
+    width: 4.4em;
+    height: 4.4em;
+    margin: 0.5em auto 0;
+    background-color: var(--green-color);
+    border-radius: 50%;
+}
+
+.grid-icon i {
+    color: var(--white-color);
+    font-size: 1.2em;
+    line-height: 3.5em;
+}
+
+.grid-item h3 {
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    line-height: 30px;
+    text-transform: uppercase !important;
+    margin: 1em 0;
+}
+
+.grid-item p {
+    color: var(--p-color);
+    letter-spacing: 1px;
+    line-height: 2em;
+    padding: 0 1.5em;
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: .4em auto 1em;
+}
+
+.section-text {
+    width: 80%;
+    margin: 1em auto 2em;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.overlay-clr {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3em 0;
+}
+
+/* --- #End grid --- */
+
+
+/* --- Header --- */
 
 header {
     position: absolute;
@@ -84,6 +144,9 @@ header nav i.fa {
 header nav .menu li a:hover {
     color: var(--yellow-main-color);
 }
+
+/* --- End header --- */
+
 
 /* --- Banner --- */
 
@@ -176,14 +239,6 @@ header nav .menu li a:hover {
     color: var(--p-color);
 }
 
-.about .about-text {
-    width: 70%;
-    margin: 1em auto 2em;
-    line-height: 2em;
-    font-size: 1.2em;
-    font-weight: normal;
-}
-
 .about .grid-content {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -261,15 +316,11 @@ header nav .menu li a:hover {
 
 
 /* --- Ability --- */
+
 .ability {
     background: url(../images/5.jpg) no-repeat center;
     background-size: 100%;
     color: var(--white-color);
-}
-
-.ability .overlay-clr {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 3em 0;
 }
 
 .ability h4 {
@@ -287,12 +338,12 @@ header nav .menu li a:hover {
 
 .ability li {
     color: var(--gray-color2);
-    font-size: 1.1em;
+    font-size: 1.112em;
     line-height: 1.8em;
 }
 
 .ability .grid-content {
-    grid-template-columns: 2fr 2.4fr 1fr;
+    grid-template-columns: 1.6fr 2fr 1fr;
 }
 
 /* --- #End ability --- */
@@ -309,4 +360,143 @@ header nav .menu li a:hover {
     text-transform: none;
 }
 
+.product .grid-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.product .grid-item {
+    position: relative;
+    margin-bottom: 12em;
+}
+
+.product .prd-backgr {
+    background-size: cover;
+    width: 350px;
+    height: 235px;
+}
+
+.product .product-img1 {
+    background: url(../images/s1.jpg) no-repeat center;
+}
+
+.product .product-img2 {
+    background: url(../images/s2.jpg) no-repeat center;
+}
+
+.product .product-img3 {
+    background: url(../images/s3.jpg) no-repeat center;
+}
+
+.product .product-text {
+    text-align: left;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: -8.5em;
+    padding: 2em 0 1em;
+    margin-top: -2em;
+    z-index: 9;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.08), 0 5px 8px 0 rgba(0, 0, 0, 0.12), 0 1px 14px 0 rgba(0, 0, 0, 0.06);
+}
+
+.product .product-text h4 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    padding: 0 1.1em;
+}
+
+.product .product-text i.fab {
+    color: var(--green-color);
+}
+
 /* --- #End product and services--- */
+
+/* --- Plant --- */
+
+.plant {
+    background: url(../images/2.jpg) no-repeat center;
+    background-image: 100%;
+    text-align: center;
+}
+
+.plant h3 {
+    color: var(--white-color);
+    text-transform: none;
+}
+
+.plant span {
+    color: var(--yellow-main-color);
+}
+
+.plant p {
+    color: var(--gray-color);
+}
+
+.plant a {
+    font-size: 1.2em;
+    padding: .5em 1.5em;
+    margin: 0 1em;
+}
+
+/* --- #End plant --- */
+
+
+/* --- Footer --- */
+
+footer {
+    text-align: center;
+    padding: 3em 0;
+    background-color: var(--black-color);
+}
+
+footer h3 {
+    color: var(--white-color);
+}
+
+footer h3 i {
+    color: var(--yellow-main-color);
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer .contact,
+footer .social {
+    padding: .2em 0;
+}
+
+footer .contact ul li {
+    padding: 0 .8em;
+}
+
+footer .contact ul li i,
+footer .coppyright a {
+    color: #AAAAAA;
+}
+
+footer .social ul li {
+    padding: 0em .2em;
+    font-size: 1.2em;
+}
+
+footer p {
+    color: var(--p-color);
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+    color: var(--p-color);
+}
+
+footer .coppyright {
+    padding-top: 1.5em;
+    font-size: 1.09em;
+}
+
+/* --- #End footer --- */
