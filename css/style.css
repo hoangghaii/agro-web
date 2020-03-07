@@ -1,4 +1,4 @@
-/* ---------------- style page ----------------- */
+/* --- Style page ---- */
 
 @import url('https://fonts.googleapis.com/css?family=Thasadith&display=swap');
 
@@ -40,10 +40,17 @@ body {
     font-size: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* --- Grid --- */
 
 .grid-content {
     display: grid;
+    width: 100%;
 }
 
 .grid-icon {
@@ -52,12 +59,46 @@ body {
     margin: 0.5em auto 0;
     background-color: var(--green-color);
     border-radius: 50%;
+    -webkit-transition: 1s;
+    transition: 1s;
 }
 
 .grid-icon i {
     color: var(--white-color);
     font-size: 1.2em;
     line-height: 3.5em;
+}
+
+.grid-icon:hover i {
+    -webkit-animation: rotate360 1.5s infinite;
+    animation: rotate360 1.5s infinite;
+    color: var(--yellow-main-color);
+}
+
+@-webkit-keyframes rotate360 {
+    from {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        /* color: var(--yellow-main-color); */
+    }
+
+    to {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+        color: var(--yellow-main-color);
+    }
 }
 
 .grid-item h3 {
@@ -102,7 +143,7 @@ body {
 
 header {
     position: absolute;
-    z-index: 9;
+    z-index: 2;
     width: 100%;
 }
 
@@ -113,14 +154,7 @@ header #logo a {
     font-weight: 600;
     padding: 3px 0;
     letter-spacing: 1px;
-}
-
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-header nav:after {
-    content: "";
-    display: table;
-    clear: both;
+    display: initial;
 }
 
 header nav ul {
@@ -137,11 +171,36 @@ header nav ul li {
     float: left;
 }
 
-header nav i.fa {
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+header nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav #logo i,
+header nav .menu i,
+header nav .menu li a:hover,
+header nav .menu li.active a {
     color: var(--yellow-main-color);
 }
 
-header nav .menu li a:hover {
+header .mobile-menu {
+    display: none;
+}
+
+header .mobile-menu i {
+    font-size: 1.5em;
+    padding: .4em .5em;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+header .mobile-menu:hover i {
+    background-color: var(--white-color);
     color: var(--yellow-main-color);
 }
 
@@ -290,11 +349,8 @@ header nav .menu li a:hover {
     text-align: center;
 }
 
-.core .core-img {
-    background: url(../images/core.jpg) no-repeat center;
-    background-size: 100%;
-    width: 540px;
-    height: 360px;
+.core img {
+    margin: 2em auto;
 }
 
 .core .grid-content {
@@ -319,7 +375,7 @@ header nav .menu li a:hover {
 
 .ability {
     background: url(../images/5.jpg) no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     color: var(--white-color);
 }
 
@@ -328,12 +384,14 @@ header nav .menu li a:hover {
     letter-spacing: 1px;
     line-height: 1.8em;
     padding: 0 .9em;
+
 }
 
 .ability p {
     color: var(--gray-color);
     font-weight: 500;
     line-height: 1.9em;
+
 }
 
 .ability li {
@@ -366,14 +424,13 @@ header nav .menu li a:hover {
 }
 
 .product .grid-item {
-    position: relative;
     margin-bottom: 12em;
+    position: relative;
 }
 
-.product .prd-backgr {
-    background-size: cover;
-    width: 350px;
-    height: 235px;
+.product img {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .product .product-img1 {
@@ -415,6 +472,7 @@ header nav .menu li a:hover {
 
 /* --- #End product and services--- */
 
+
 /* --- Plant --- */
 
 .plant {
@@ -439,7 +497,12 @@ header nav .menu li a:hover {
 .plant a {
     font-size: 1.2em;
     padding: .5em 1.5em;
-    margin: 0 1em;
+    margin: .5em 1em;
+}
+
+
+.plant a.btn-success {
+    padding: .5em 1.8em;
 }
 
 /* --- #End plant --- */
@@ -500,3 +563,15 @@ footer .coppyright {
 }
 
 /* --- #End footer --- */
+
+
+/* --- Scroll top --- */
+.scroll-top {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* --- #End scroll top --- */

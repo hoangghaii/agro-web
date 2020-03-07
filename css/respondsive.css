@@ -1,0 +1,263 @@
+/* ----- screen 1366px ----- */
+
+@media(max-width:1366px) {
+
+    .banner .thumb {
+        min-height: 670px;
+    }
+
+}
+
+/* ----- screen 1280px ----- */
+
+@media (max-width:1280px) {
+
+    .banner .thumb {
+        min-height: 658px;
+    }
+
+}
+
+/* ----- screen 1080px ----- */
+
+@media (max-width:1080px) {
+
+    .banner .thumb {
+        min-height: 650px;
+    }
+
+    .banner .banner-content h3{
+        font-size: 3.5em;
+    }
+
+    .banner .banner-content h4{
+        font-size: 1.5em;
+    }
+
+    .core .grid-item h4{
+        font-size: 1.22em;
+        padding: 0 1.12em;
+    }
+    .ability h4{
+        font-size: 1.5em;
+    }
+    .product .product-text{
+        bottom: -10em;
+        padding: 1em 0 .5em;
+    }
+
+}
+
+/* ----- screen 991px ----- */
+
+@media (max-width:991px) {
+
+    .banner .thumb {
+        min-height: 640px;
+    }
+
+    .banner .banner-content h3{
+        font-size: 3em;
+    }
+
+    .banner .banner-content h4{
+        font-size: 1.4em;
+    }
+    .banner .banner-content p{
+        font-size: 1.1em;
+    }
+
+    .core .grid-item h4{
+        font-size: 1.1em;
+        padding: 0 1.2em;
+    }
+    .core .grid-item p{
+        font-size: 1em;
+    }
+    .product .product-text{
+        bottom: -8em;
+    }
+
+    header nav .mobile-menu {
+        display: block;
+        float: right;
+    }
+
+    header nav ul {
+        float: none;
+        display: none;
+        width: 100%;
+        text-align: center;
+        top: 1em;
+    }
+
+    header nav ul li {
+        float: none;
+        display: block;
+        padding: .8em 0;
+        background-color: var(--white-color);
+    }
+
+    header nav .menu li a {
+        color: var(--black-color);
+    }
+
+    header nav .menu li a:hover,
+    header nav .menu li.active a {
+        color: var(--green-color);
+    }
+
+    .about .grid-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wcu .grid-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .core .grid-content {
+        grid-template-columns: 1fr;
+    }
+
+    .ability .grid-content {
+        grid-template-areas: "h4 h4""p ul";
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .ability .grid-item {
+        margin: .5em 0;
+    }
+
+    .ability .item-top {
+        grid-area: h4;
+    }
+
+    .ability .item-left {
+        grid-area: p;
+    }
+
+    .ability .item-right {
+        grid-area: ul;
+    }
+
+    .product .grid-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+    }
+
+
+}
+
+/* ----- screen 768px ----- */
+
+@media (max-width:768px) {
+
+    .banner .thumb {
+        min-height: 620px;
+    }
+
+    .banner .banner-content h3{
+        font-size: 2.8em;
+    }
+
+    .banner .banner-content h4{
+        font-size: 1.3em;
+    }
+
+    .banner .banner-content p{
+        font-size: 1.09em;
+    }
+    .core .grid-item h4{
+        font-size: 1.22em;
+        padding: 0 1.12em;
+    }
+    .ability h4{
+        font-size: 1.5em;
+    }
+    .product .product-text{
+        bottom: -10em;
+        padding: 1em 0 .5em;
+    }
+   
+}
+
+/* ----- screen 736px ----- */
+
+/* @media (max-width:736px){
+    .banner .thumb{
+        min-height: 580px;
+    }
+} */
+
+/* ----- screen 640px (Small Tablet) ----- */
+
+@media (max-width:600px) {
+
+    .banner .thumb {
+        min-height: 600px;
+    }
+
+    .about .grid-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .wcu .grid-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .core img {
+        width: 92%;
+    }
+
+
+    .ability .grid-content {
+        grid-template-areas: "h4""p""ul";
+        grid-template-columns: 1fr;
+    }
+
+    .ability ul {
+        padding: 0 1.5em;
+    }
+
+    .product .grid-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ----- screen 480px ----- */
+
+@media (max-width:480px) {
+
+    .banner .thumb {
+        min-height: 480px;
+    }
+
+    .core .core-img {
+        width: 350px;
+        height: 260px;
+    }
+
+    .product .prd-backgr {
+        background-size: 100%;
+        width: 350px;
+        height: 260px;
+    }
+
+
+}
+
+/* ----- screen 375px (Iphone 7) ----- */
+
+@media (max-width:375px) {
+    .wcu .grid-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ----- screen 320px (Iphone 5) ----- */
+
+@media (max-width:320px) {}
