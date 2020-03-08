@@ -46,6 +46,10 @@ img {
     display: block;
 }
 
+section {
+    padding: 3em 0;
+}
+
 /* --- Grid --- */
 
 .grid-content {
@@ -133,11 +137,11 @@ img {
 
 .overlay-clr {
     background: rgba(0, 0, 0, 0.5);
-    padding: 3em 0;
 }
 
 /* --- #End grid --- */
 
+/* --------------- Index.html --------------- */
 
 /* --- Header --- */
 
@@ -291,7 +295,6 @@ header .mobile-menu:hover i {
 
 .about {
     text-align: center;
-    padding: 3em 0;
 }
 
 .about p {
@@ -314,7 +317,6 @@ header .mobile-menu:hover i {
 
 .wcu {
     text-align: center;
-    padding: 3em 0;
     background-color: var(--green-color);
 }
 
@@ -340,10 +342,6 @@ header .mobile-menu:hover i {
 
 
 /* --- Core --- */
-
-.core {
-    padding: 3em 0;
-}
 
 .core h3 {
     text-align: center;
@@ -377,6 +375,11 @@ header .mobile-menu:hover i {
     background: url(../images/5.jpg) no-repeat center;
     background-size: cover;
     color: var(--white-color);
+    padding: 0 !important;
+}
+
+.ability .overlay-clr {
+    padding: 3em 0;
 }
 
 .ability h4 {
@@ -411,7 +414,6 @@ header .mobile-menu:hover i {
 
 .product {
     text-align: center;
-    padding: 3em 0;
 }
 
 .product .section-title {
@@ -479,6 +481,11 @@ header .mobile-menu:hover i {
     background: url(../images/2.jpg) no-repeat center;
     background-image: 100%;
     text-align: center;
+    padding: 0 !important;
+}
+
+.plant .overlay-clr {
+    padding: 3em 0;
 }
 
 .plant h3 {
@@ -564,8 +571,146 @@ footer .coppyright {
 
 /* --- #End footer --- */
 
+/* --------------- #End index.html --------------- */
+
+
+
+/* --------------- About.html --------------- */
+
+/* --- Banner --- */
+
+.about-banner {
+    background: url(../images/2.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 250px;
+    vertical-align: top;
+}
+
+.about-banner .overlay-clr {
+    min-height: 250px;
+}
+
+/* --- #End banner --- */
+
+
+/* --- About about --- */
+
+.about-about .section-title {
+    text-align: center;
+}
+
+.about-about .grid-content {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.about-about .grid-item {
+    text-align: left;
+}
+
+.about-about .grid-item h5 {
+    color: var(--green-color);
+    font-size: 1.5em;
+}
+
+.about-about .grid-item h3 {
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+.about-about .grid-item h6 {
+    font-size: 1.5em;
+}
+
+.about-about .grid-item p {
+    color: var(--p-color);
+    font-family: 'Thasadith', sans-serif !important;
+    font-weight: 600;
+}
+
+.about-about .grid-item i.fa {
+    color: var(--green-color);
+}
+
+/* --- #End about about --- */
+
+
+/* --- About bottom --- */
+
+.about-top {
+    background-color: var(--green-color);
+}
+
+.about-top .grid-content {
+    grid-template-columns: 2.2fr 1fr;
+}
+
+.about-top .grid-item h3 {
+    font-size: 1.8em;
+    color: var(--white-color);
+    line-height: 1.8em;
+}
+
+.about-top .grid-item.item-left {
+    padding: 2em 3em;
+}
+
+.about-top .grid-item a {
+    font-size: 1.085em;
+    padding: .6em 1.9em;
+}
+
+/* --- #End about bottom --- */
+
+
+/* --- About bottom --- */
+
+.about-bottom {
+    background: url(../images/1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.about-bottom .overlay-clr {
+    padding: 3em 0;
+}
+
+.about-bottom .grid-content {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.about-bottom .grid-item {
+    color: var(--white-color);
+}
+
+.about-bottom .grid-item i {
+    font-size: 2.8em;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.about-bottom .grid-item i:hover {
+    -webkit-animation: rotate360 1.5s infinite;
+    animation: rotate360 1.5s infinite;
+    color: var(--yellow-main-color);
+}
+
+.about-bottom .grid-item h2 {
+    font-size: 3em;
+    padding: .5em 0 .2em;
+}
+
+.about-bottom .grid-item h4 {
+    font-size: 1.2em;
+}
+
+/* --- #End about bottom --- */
+
+/* --------------- #End about.html --------------- */
+
 
 /* --- Scroll top --- */
+
 .scroll-top {
     position: fixed;
     bottom: 4%;
