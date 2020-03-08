@@ -110,7 +110,7 @@ section {
     letter-spacing: 3px;
     line-height: 30px;
     text-transform: uppercase !important;
-    margin: 1em 0;
+    padding: 1em 0;
 }
 
 .grid-item p {
@@ -171,8 +171,8 @@ header nav ul {
 /* Positioning the navigation items inline */
 header nav ul li {
     margin: 0px;
-    display: inline-block;
     float: left;
+    display: inline-block;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -635,7 +635,7 @@ footer .coppyright {
 /* --- #End about about --- */
 
 
-/* --- About bottom --- */
+/* --- About top --- */
 
 .about-top {
     background-color: var(--green-color);
@@ -660,7 +660,7 @@ footer .coppyright {
     padding: .6em 1.9em;
 }
 
-/* --- #End about bottom --- */
+/* --- #End about top --- */
 
 
 /* --- About bottom --- */
@@ -697,7 +697,9 @@ footer .coppyright {
 
 .about-bottom .grid-item h2 {
     font-size: 3em;
+    font-family: 'Thasadith', sans-serif !important;
     padding: .5em 0 .2em;
+    cursor: pointer;
 }
 
 .about-bottom .grid-item h4 {
@@ -705,6 +707,82 @@ footer .coppyright {
 }
 
 /* --- #End about bottom --- */
+
+
+/* --- Our team --- */
+
+.about-team {
+    text-align: center;
+}
+
+.about-team .grid-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.about-team .grid-item h3 {
+    padding-bottom: 0;
+}
+
+.about-team ul li {
+    display: inline-block;
+}
+
+.about-team i {
+    color: var(--p-color);
+    padding: 0 5px;
+    margin-top: -5em;
+    font-size: 13px;
+}
+
+/* --- #End our team --- */
+
+
+/* --- Clients --- */
+
+.about-client {
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+.about-client .grid-content {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    gap: 2em;
+}
+
+.about-client .grid-item {
+    background-color: var(--white-color);
+    padding: 2em .5em;
+}
+
+.about-client .grid-item h4 {
+    text-transform: uppercase;
+    padding: .5em 0 .5em 1em;
+    font-size: 1.3em;
+}
+
+.about-client .grid-item p {
+    font-size: 1.03em;
+}
+
+.about-client .info {
+    display: -webkit-box;
+    display: flex;
+    padding: .5em 0 0 1.4em;
+}
+
+.about-client .info .info-left img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.about-client .info .info-right {
+    margin: 1.2em 0 0 1em;
+}
+
+/* --- #End clients --- */
 
 /* --------------- #End about.html --------------- */
 
