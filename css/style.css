@@ -139,6 +139,10 @@ section {
     background: rgba(0, 0, 0, 0.5);
 }
 
+#wrapper #main-content {
+    position: relative;
+}
+
 /* --- #End grid --- */
 
 /* --------------- Index.html --------------- */
@@ -343,6 +347,10 @@ header .mobile-menu:hover i {
 
 /* --- Core --- */
 
+.core {
+    background-color: var(--white-color);
+}
+
 .core h3 {
     text-align: center;
 }
@@ -414,6 +422,7 @@ header .mobile-menu:hover i {
 
 .product {
     text-align: center;
+    background-color: var(--white-color);
 }
 
 .product .section-title {
@@ -518,9 +527,14 @@ header .mobile-menu:hover i {
 /* --- Footer --- */
 
 footer {
+    width: 100%;
+    height: auto;
     text-align: center;
     padding: 3em 0;
     background-color: var(--black-color);
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
 }
 
 footer h3 {
@@ -579,6 +593,10 @@ footer .coppyright {
 
 /* --- Banner --- */
 
+.about {
+    background-color: var(--white-color);
+}
+
 .about-banner {
     background: url(../images/2.jpg) no-repeat center;
     background-size: cover;
@@ -594,6 +612,10 @@ footer .coppyright {
 
 
 /* --- About about --- */
+
+.about-about {
+    background-color: var(--white-color);
+}
 
 .about-about .section-title {
     text-align: center;
@@ -713,6 +735,7 @@ footer .coppyright {
 
 .about-team {
     text-align: center;
+    background-color: var(--white-color);
 }
 
 .about-team .grid-content {
@@ -793,7 +816,7 @@ footer .coppyright {
     position: fixed;
     bottom: 4%;
     right: 2%;
-    z-index: 0;
+    z-index: 1;
     cursor: pointer;
 }
 

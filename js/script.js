@@ -18,21 +18,16 @@
         });
     };
 
-    var countTo = function () {
-        $('.count').countTo({
-            refreshInterval: 30,
-        });
-        $('.count').click(function () {
-            $(this).countTo({
-                refreshInterval: 30,
-            });
-        })
+    var footerFixed = function () {
+        var footerHeight = $('#footer').outerHeight();
+        $('#wrapper').css('padding-bottom', footerHeight);
+        $('#footer').css('height', footerHeight);
     };
 
     //Dom Ready
     $(function () {
         scrollTop();
-        countTo();
+        footerFixed();
     });
 
 })(jQuery);
