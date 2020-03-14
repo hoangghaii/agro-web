@@ -229,7 +229,8 @@
 /* ----- screen 480px ----- */
 
 @media (max-width:480px) {
-
+    *{};
+  
     .banner .thumb {
         min-height: 480px;
     }
